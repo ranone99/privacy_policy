@@ -223,6 +223,46 @@
       font-weight: 700;
     }
 
+    /* قائمة الروابط الرسمية */
+    .sources-list {
+      list-style: none;
+      margin-top: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .source-item {
+      background-color: var(--bg-app);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .source-name {
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .source-link {
+      font-size: 0.8rem;
+      color: var(--primary);
+      text-decoration: none;
+      direction: ltr;
+      text-align: right;
+      word-break: break-all;
+      font-weight: 500;
+    }
+
+    .source-link:hover,
+    .source-link:active {
+      text-decoration: underline;
+    }
+
     /* صندوق التنبيه الهام */
     .highlight-box {
       background-color: var(--danger-light);
@@ -270,7 +310,7 @@
       </div>
     </div>
 
-    <!-- 1. طبيعة التطبيق -->
+    <!-- 1. طبيعة التطبيق وإخلاء المسؤولية الحكومية والمصرفية -->
     <div class="policy-card">
       <div class="section-header">
         <div class="section-badge">
@@ -280,11 +320,14 @@
             <line x1="12" y1="8" x2="12.01" y2="8"></line>
           </svg>
         </div>
-        <h2 class="section-title">1. طبيعة تطبيق بنوكي</h2>
+        <h2 class="section-title">1. طبيعة التطبيق وإخلاء المسؤولية</h2>
       </div>
       <p class="policy-text">
-        تطبيق <strong>"بنوكي"</strong> هو أداة تقنية وإرشادية مستقلة تهدف إلى مساعدة المستخدمين في استخراج أرقام الحسابات المحلية (BBAN)، وتوفير أدلة إرشادية لحل المشكلات الشائعة في التطبيقات البنكية. التطبيق جهة مستقلة تماماً ولا يمثل أي بنك أو مؤسسة مالية بشكل رسمي.
+        تطبيق <strong>"بنوكي"</strong> هو أداة تقنية ودليل معلوماتي وإرشادي مستقل تماماً، يهدف إلى مساعدة المستخدمين في استخراج أرقام الحسابات المحلية (BBAN)، وتوفير أدلة إرشادية مبسّطة لفتح الحسابات وحل المشكلات الشائعة في التطبيقات البنكية والمحافظ الإلكترونية السودانية.
       </p>
+      <div class="highlight-box">
+        <strong>إخلاء مسؤولية صريح:</strong> تطبيق "بنوكي" جهة مستقلة مطلقاً، <strong>ولا يمثل أي جهة حكومية أو مؤسسة مصرفية رسمية</strong>، ولا يتبع لأي بنك أو محفظة إلكترونية أو شركة اتصالات، كما لا يملك أي تفويض حكومي ولا يقدّم خدمات مصرفية أو تحويل أموال مباشرة داخل التطبيق.
+      </div>
     </div>
 
     <!-- 2. خصوصية البيانات وعدم جمع المعلومات -->
@@ -308,7 +351,7 @@
       </ul>
     </div>
 
-    <!-- 3. مصادر البيانات والأرقام الرسمية -->
+    <!-- 3. المصادر الرسمية المعتمدة لبيانات التطبيق -->
     <div class="policy-card">
       <div class="section-header">
         <div class="section-badge">
@@ -317,11 +360,49 @@
             <polyline points="22 4 12 14.01 9 11.01"></polyline>
           </svg>
         </div>
-        <h2 class="section-title">3. مصادر المعلومات وأرقام التواصل</h2>
+        <h2 class="section-title">3. المصادر الرسمية المعتمدة للمعلومات</h2>
       </div>
       <p class="policy-text">
-        جميع أرقام هواتف خدمة العملاء، وروابط بوابات فتح الحسابات الإلكترونية، والمعلومات الإرشادية المعروضة داخل التطبيق تم جمعها وتوثيقها حصرياً من <strong>المواقع الإلكترونية الرسمية والصفحات الموثقة للبنوك المعنية</strong> لتسهيل وصول المستخدمين إليها دون عناء البحث.
+        تم جمع وتوثيق كافة المعلومات الإرشادية، وأرقام هواتف خدمة العملاء، وروابط بوابات فتح الحسابات الإلكترونية المعروضة في التطبيق حصرياً من <strong>المصادر الرسمية المعلنة للجمهور</strong> عبر الروابط التالية:
       </p>
+      <ul class="sources-list">
+        <li class="source-item">
+          <span class="source-name">1. بنك السودان المركزي (المنظم للقطاع المصرفي ومعايير أرقام الحسابات)</span>
+          <a class="source-link" href="https://cbos.gov.sd/" target="_blank" rel="noopener noreferrer">https://cbos.gov.sd/</a>
+        </li>
+        <li class="source-item">
+          <span class="source-name">2. موقع بنك الخرطوم الرسمي</span>
+          <a class="source-link" href="https://bankofkhartoum.com/sudan/ar" target="_blank" rel="noopener noreferrer">https://bankofkhartoum.com/sudan/ar</a>
+        </li>
+        <li class="source-item">
+          <span class="source-name">3. موقع بنك أمدرمان الوطني</span>
+          <a class="source-link" href="https://www.onb-sd.com/" target="_blank" rel="noopener noreferrer">https://www.onb-sd.com/</a>
+        </li>
+        <li class="source-item">
+          <span class="source-name">4. بنك فيصل الإسلامي السوداني</span>
+          <a class="source-link" href="https://fib-sd.com/ar" target="_blank" rel="noopener noreferrer">https://fib-sd.com/ar</a>
+        </li>
+        <li class="source-item">
+          <span class="source-name">5. بنك النيل</span>
+          <a class="source-link" href="https://alnilebank.com/" target="_blank" rel="noopener noreferrer">https://alnilebank.com/</a>
+        </li>
+        <li class="source-item">
+          <span class="source-name">6. بنك النيل الأزرق المشرق</span>
+          <a class="source-link" href="https://bluemashreg.com/" target="_blank" rel="noopener noreferrer">https://bluemashreg.com/</a>
+        </li>
+        <li class="source-item">
+          <span class="source-name">7. مجموعة كاشي (ماي كاشي)</span>
+          <a class="source-link" href="https://getcashi.com/ar" target="_blank" rel="noopener noreferrer">https://getcashi.com/ar</a>
+        </li>
+        <li class="source-item">
+          <span class="source-name">8. محفظة برافو</span>
+          <a class="source-link" href="https://bravo-sudan.com/ar" target="_blank" rel="noopener noreferrer">https://bravo-sudan.com/ar</a>
+        </li>
+        <li class="source-item">
+          <span class="source-name">9. محفظة صح</span>
+          <a class="source-link" href="https://www.sah.sd/ar" target="_blank" rel="noopener noreferrer">https://www.sah.sd/ar</a>
+        </li>
+      </ul>
     </div>
 
     <!-- 4. إخلاء المسؤولية عن الروابط والمواقع الخارجية للبنوك -->
@@ -337,10 +418,10 @@
         <h2 class="section-title">4. إخلاء المسؤولية عن مواقع البنوك</h2>
       </div>
       <p class="policy-text">
-        يحتوي التطبيق على روابط خارجية تنقلك مباشرة إلى المواقع الرسمية للبنوك (مثل صفحات فتح الحسابات أونلاين أو قنوات الدعم الرسمية). وبمجرد مغادرتك للتطبيق ودخولك إلى موقع البنك:
+        يحتوي التطبيق على روابط خارجية تنقلك مباشرة إلى المواقع الرسمية للبنوك والمحافظ (مثل صفحات فتح الحسابات أونلاين أو قنوات الدعم الرسمية). وبمجرد مغادرتك للتطبيق ودخولك إلى الموقع الخارجي:
       </p>
       <div class="highlight-box">
-        <strong>تنبيه قانوني هام:</strong> إدارة ومطور تطبيق "بنوكي" غير مسؤولين نهائياً عن سياسات الخصوصية أو مستوى الحماية داخل مواقع البنوك الخارجية. في حال تعرض موقع البنك الرسمي نفسه للاختراق أو لأي خلل أمني أدى إلى تسريب أو تعريض بيانات العملاء للخطر أثناء استخدامهم لموقع البنك، فإن المسؤولية تقع بالكامل على الجهة المالكة للموقع البنكي ولا يتحمل تطبيق "بنوكي" أي مسؤولية قانونية أو مالية عن ذلك.
+        <strong>تنبيه قانوني هام:</strong> إدارة ومطور تطبيق "بنوكي" غير مسؤولين نهائياً عن سياسات الخصوصية أو مستوى الحماية داخل مواقع البنوك والمحافظ الخارجية. في حال تعرض أي موقع رسمي للاختراق أو لأي خلل أمني أدى إلى تسريب أو تعريض بيانات العملاء للخطر أثناء استخدامهم له، فإن المسؤولية تقع بالكامل على الجهة المالكة للموقع ولا يتحمل تطبيق "بنوكي" أي مسؤولية قانونية أو مالية عن ذلك.
       </div>
     </div>
 
@@ -380,8 +461,8 @@
 
     <div class="footer-note">
       جميع الحقوق محفوظة © تطبيق بنوكي 2026<br>
-      تطبيق إرشادي مستقل — غير تابع لأي مؤسسة مصرفية<br>
-      Techway - Mustafa
+      أداة إرشادية مستقلة — لا تمثل أي جهة حكومية أو مؤسسة مصرفية<br>
+      TechWay - Mustafa
     </div>
 
   </div>
